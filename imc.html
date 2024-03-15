@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<script>
+    //Funçao pra pular linha
+    var pulaLinha = function(){
+        document.write("<br>");
+    }
+    //Funçao para nao precisar usar o document.write toda hora
+    var mostra = function(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    //funcao pra calcular o imc
+    var calculaIMC = function(altura,peso){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var peso = 69;
+    var altura = 1.76;
+    var imc = Math.round(calculaIMC(altura,peso));
+    mostra("Meu IMC é" + imc);
+    
+    mostra("Eu ainda estou " + (imc - 18.5) + "pontos acima do limite da magreza.")
+
+    mostra("Meu IMC é:" + imc);
+
+
+
+</script>
