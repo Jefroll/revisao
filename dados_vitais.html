@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<script>
+    var calculaDias = function(idade){
+        var dias = idade*365;
+        return dias;
+    };
+
+    var calculaBatimento = function(dias){
+        batimento = dias*365*24*60*80;
+        return batimento;
+    }
+
+    var idadeUsuario = prompt("Qual sua idade?");
+
+    document.write("Voce ja viveu" + calculaDias(idadeUsuario));
+    document.write("Seu coaração ja bateu " + calculaBatimento(calculaDias(idadeUsuario)));
+
+
+</script>

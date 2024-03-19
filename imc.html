@@ -14,16 +14,11 @@
         var imc = peso / (altura * altura);
         return imc;
     }
-
-    var peso = 69;
-    var altura = 1.76;
-    var imc = Math.round(calculaIMC(altura,peso));
-    mostra("Meu IMC é" + imc);
-    
-    mostra("Eu ainda estou " + (imc - 18.5) + "pontos acima do limite da magreza.")
-
-    mostra("Meu IMC é:" + imc);
-
+   var nome = prompt("Bom dia, qual é o seu nome?")
+   var alturaDoUsuario = prompt(nome + " qual é a sua altura?");
+   var pesoDoUsuario = prompt(nome +" e o seu peso?")
+   var imcDoUsuario = Math.round(calculaIMC(alturaDoUsuario, pesoDoUsuario));
+   mostra (nome + "o seu imc é, " + imcDoUsuario);
 
 
 </script>
